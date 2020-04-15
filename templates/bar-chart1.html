@@ -1,0 +1,43 @@
+﻿<html>
+<head>
+
+    <meta charset="UTF-8">
+    <title>Question-3</title>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['bar'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Troll score', 'Following', 'Likes', 'Score count'],
+                ['1', 1019, 679, 12],
+                ['0.99', 1197, 415.26, 1],
+                ['0.98', 41, 0, 1],
+                ['0.94', 16, 220, 1]
+            ]);
+
+            var options = {
+                chart: {
+                    title: 'Trollers Performance',
+                    //subtitle: 'Sales, Expenses, and Profit: 2014-2017',
+                },
+                bars: 'vertical' // Required for Material Bar Charts.
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+        }
+    </script>
+</head>
+<body>
+    <div style="margin: 10px 0 0 10px;width: 1000px">
+        <h3>Question : Checking trollbot rating to find if an account is a fake or a normal/genuine account (if the like score is low it means it's more likely to be fake)</h3>
+
+        <div id="barchart_material" style="width: 900px; height: 500px;"></div>
+    </div>
+</body>
+</html>
+

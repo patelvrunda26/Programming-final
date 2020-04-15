@@ -1,0 +1,109 @@
+﻿
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index page</title>
+</head>
+
+<body>
+
+    <h1>Bot Sentinel Trolls</h1>
+
+    <p>The dataset is all about a score (Trollbot score) which is used to measure how likely the account is a troll and/or a bot.</p> 
+    <p>This dataset contains that score, the user’s handle, the user’s name, when they joined Twitter, how many tweets they’ve made, how many followers they have, and how many accounts they’re following.
+    
+    </p>
+    <div class=container-fluid>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+
+            <div id="LineChart" class="container tab-pane fade">
+                <br>
+                <label class="tab-content-header msr-bg-yellow">
+                    Question 1: Which year had the most no. of new user registrations? <div style="float:right">
+                    </div>
+                </label>
+
+                <div id="lineChartPy">
+
+                </div>
+
+
+
+            </div>
+            <li class="nav-item" id="lineChartTabLi" onclick="">
+                <a href="/pie-chart" class="nav-link" data-toggle="tab" tabName="LineChart">Answer</a>
+            </li>
+
+
+            <div id="BarChart" class="container tab-pane ">
+                <br>
+
+                <div class="col-lg-12">
+                    <label class="tab-content-header msr-bg-yellow">
+                        Question 2: Top four who has most number of followers and the their no. of tweets (to show if an active user is more popular or not)
+
+                    </label>
+                    <div id="barChartPy">
+
+                    </div>
+                </div>
+
+            </div>
+            <li class="nav-item " id="barChartTabLi" onclick="">
+                <a href="/bar-chart" class="nav-link " data-toggle="tab" tabName="BarChart">Answer</a>
+            </li>
+
+
+            <div id="BarChart1" class="container tab-pane ">
+                <br>
+
+                <div class="col-lg-12">
+                    <label class="tab-content-header msr-bg-yellow">
+                        Question 3: Checking trollbot rating to find if an account is a fake or a normal/genuine account (if the like score is low it means it's more likely to be fake)
+
+                    </label>
+                    <div id="barChartPy1">
+
+                    </div>
+                </div>
+
+            </div>
+            <li class="nav-item " id="barChartTabLi1" onclick="">
+                <a href="/bar-chart1" class="nav-link " data-toggle="tab" tabName="BarChart">Answer</a>
+            </li>
+            <!--<div id="PieChart" class="container tab-pane fade">
+        <br>
+        <label class="tab-content-header msr-bg-yellow">
+            Question 3:  Checking trollbot rating to find if an account is a fake or a normal/genuine account (if the score is low it means it's more likely to be fake) <div style="float:right">
+            </div>
+        </label>
+
+        <div id="pieChartPy">
+
+        </div>
+
+
+
+    </div>
+    <li class="nav-item" id="pieChartTabLi" onclick="">
+        <a href="/pie-chart" class="nav-link" data-toggle="tab" tabName="PieChart">Pie Chart</a>
+    </li>-->
+
+        </ul>
+
+    </div>
+
+        <script src="script.js"></script>
+
+
+</body>
+
+</html>
